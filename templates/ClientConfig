@@ -1,0 +1,3 @@
+topology.topic.managed.prefixes.1={{ prefix }}
+topology.group.managed.prefixes.0={{ prefix }}
+topology.service.accounts.managed.prefixes.0="{{ cn }}"

@@ -1,0 +1,27 @@
+{% set prefix_list = prefix.split(".") %}
+---
+context: "{{ prefix_list[0] }}"
+department: "{{ prefix_list[1] }}"
+app: "{{ prefix_list[2] }}"
+projects:
+  - name: "{{ prefix_list[3] }}"
+#    topics:
+#      - name: "ingress"
+#        schemas:
+#          #- value.schema.file: "schemas/project1.ingress-value.v1.json"
+#          #  value.format: "JSON"
+#        config:
+#          replication.factor: "3"
+#          num.partitions: "6"
+#      - name: "egress"
+#        schemas:
+#          #- value.schema.file: "schemas/project2.egress-value.v1.json"
+#          #  value.format: "JSON"
+#        config:
+#          replication.factor: "3"
+#          num.partitions: "4"
+#    consumers:
+#      - principal: "{{ principal }}"
+#        group: "{{ prefix }}.ingress"
+#    producers:
+#      - principal: "{{ principal }}"
